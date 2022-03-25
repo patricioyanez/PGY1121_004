@@ -21,6 +21,8 @@ Algoritmo EjercicioTriangulo
 		sino
 			si angulo1 = angulo2 o angulo1 = angulo3 o angulo2 = angulo3 Entonces
 				Escribir "Es un triangulo isoceles"
+			SiNo
+				Escribir "Es un triangulo escaleno"
 			FinSi
 		FinSi
 	FinSi
