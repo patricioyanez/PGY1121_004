@@ -29,8 +29,5 @@ Algoritmo MaquinaVendedora
 	FinSi
 	
 	Escribir "El total a pagar es: $", totalPagar
-	
-	
-	
-	
+		
 FinAlgoritmo
