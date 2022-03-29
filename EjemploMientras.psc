@@ -5,7 +5,7 @@ Algoritmo EjemploSuma5Numeros
 	// inicializar variables
 	total  = 0 
 	indice = 1	
-	Mientras indice <= 5 Hacer
+	Mientras indice <= 5 Hacer // indice < 6
 		Escribir "Ingrese número ", indice, ":"
 		Leer numero
 		total  = total + numero
