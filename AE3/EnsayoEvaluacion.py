@@ -1,4 +1,4 @@
-clientes = []
+listaCliente = []
 rut = ""
 nombre = ""
 direccion = ""
@@ -28,41 +28,10 @@ while opcion != 4:
 
     if opcion == 1:
         print("Seleccionó la opción 1")
-        try:
-            rut = int(input("Ingrese su rut: "))
-        
-            if rut < 4000000 or rut > 99999999:
-                raise("El rut está fuera del rango")
-        except:
-            print("El rut no es válido")
-            input("Presione enter para continuar......")
-            continue
-        
-        nombre      = input("ingrese su nombre       : ")
-        direccion   = input("ingrese su direccion    : ")
-        comuna      = input("ingrese su comuna       : ")
-
-        correo      = input("ingrese su correo       : ")
-
-        if correo.count("@") != 1: # cuenta las apariciones del @
-            print("El correo no es válido")
-            input("Presione enter para continuar......")
-            continue
-
-        try:
-            edad = int(input("Ingrese su edad: "))
-        
-            if edad < 0 or edad > 110:
-                raise("La edad está fuera del rango")
-        except:
-            print("El edad no es válido")
-            input("Presione enter para continuar......")
-            continue
-
     elif opcion == 2:
-        print("Seleccionó la opción 2")
+        print("Seleccionó la opción 1")
     elif opcion == 3:
-        print("Seleccionó la opción 3")
+        print("Seleccionó la opción 1")
     elif opcion == 4:
         print("Aplicación cerrada")
 
