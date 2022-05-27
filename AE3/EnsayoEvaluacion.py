@@ -101,7 +101,7 @@ while opcion != 4:
         for cliente in clientes:
             if cliente[0] == rut:
                 cliente.append('27-05-2022')
-                print("Usuario encontrado")
+                print("Usuario suscrito")
                 fueEncontrado = True
                 break
         
