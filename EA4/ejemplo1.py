@@ -1,8 +1,10 @@
 import numpy
+# instalar numpy ==> pip install numpy
 arreglo = numpy.array([10,12,35,4,55,0,4,2,1,11])
 print(arreglo)
 print("Cantidad de dimensión:", arreglo.ndim, "dimensión")
 print("Cantidad de elementos:", arreglo.shape)
+print("Cantidad de elementos:", len(arreglo))
 
 # extraer porciones del arreglo
 #  indice de busqueda aumenta en 1
