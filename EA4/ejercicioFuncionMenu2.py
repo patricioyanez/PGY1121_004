@@ -19,7 +19,7 @@ def arrendar(casillero):
         columna = nroCasillero - 1
         nombre = input("Ingrese el nombre          : ")
         casillero[fila, columna] = nombre
-        print(casillero)
+#        print(casillero)
     except:
         print("=== Error: Opción no válida")
         input("Presione enter para continuar...")        
@@ -35,7 +35,23 @@ def casillerosDisponibles(casillero, fila):
 
 
 def mostrarUbicaciones(casillero):
-    pass
+    print("*** Disponibilidad de casilleros ***")
+    filas = ""
+    nroCasillero = 1
+    valor = ""
+    for fila in casillero:
+        for columna in fila:
+            if columna == "":
+                valor = str(nroCasillero)
+            else:
+                valor = "X"
+            filas += valor + " " 
+            nroCasillero += 1
+        filas += "\n"
+    print(filas)
+    input("Presione enter para continuar...") 
+
+
 def mostrarNombre(casillero):
     pass
 def calcularGanancias(casillero):
