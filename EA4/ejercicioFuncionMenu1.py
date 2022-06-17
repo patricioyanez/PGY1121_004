@@ -1,3 +1,16 @@
+# definir funciones
+def sumar(num1, num2):
+    return num1 + num2
+def restar(num1, num2):
+    return num1 - num2
+def multiplicar(num1, num2):
+    return num1 * num2
+def dividir(num1, num2):
+    if num2 == 0:
+        return "No se puede dividir por cero"
+    return num1 / num2
+
+# definir aplicacion
 opcion= 0
 listadoDeOpciones = ["1", "2", "3", "4", "5"]
 while opcion != "5":
@@ -13,7 +26,7 @@ while opcion != "5":
         print("=== Error: Opción no válida")
         input("Presione enter para continuar...")
         continue
-    if opcion == 5:
+    if opcion == "5":
         print("Adios!!! :) ")
     else:
         try:
