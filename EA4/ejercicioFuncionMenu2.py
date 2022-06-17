@@ -6,7 +6,34 @@ casillero = nu.array([ ["", "", ""],
 
 # definir funciones
 def arrendar(casillero):
-    pass
+    print("=== Arrendar casillero ===")
+    print("1.- nivel 1 $ 10.000")
+    print("2.- nivel 2 $  5.000")
+    print("3.- nivel 3 $  2.000")
+
+    try:
+        opcion = int(input("Ingrese nivel del casillero: ")) # fila
+        fila = opcion - 1
+        casillerosDisponibles(casillero, fila)
+        nroCasillero = int(input("Ingrese nivel del casillero: ")) # columna
+        columna = nroCasillero - 1
+        nombre = input("Ingrese el nombre          : ")
+        casillero[fila, columna] = nombre
+        print(casillero)
+    except:
+        print("=== Error: Opción no válida")
+        input("Presione enter para continuar...")        
+
+
+def casillerosDisponibles(casillero, fila):
+    print("Casilleros disponibles de la fila ", fila+1)
+    nroCasillero = 1
+    for columna in casillero[fila]:
+        if columna == "":
+            print("Casillero ", nroCasillero)
+        nroCasillero += 1
+
+
 def mostrarUbicaciones(casillero):
     pass
 def mostrarNombre(casillero):
